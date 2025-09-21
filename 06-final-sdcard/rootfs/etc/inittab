@@ -1,0 +1,5 @@
+null::sysinit:mount -t proc proc /proc
+null::sysinit:mount -t devtmpfs /dev
+null::sysinit:mount -t sysfs sysfs /sys
+console::askfirst:/bin/ash
+
