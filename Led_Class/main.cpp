@@ -30,8 +30,7 @@ int main() {
         }
 
         std::this_thread::sleep_for(std::chrono::milliseconds(500));
-    }
 
-    std::cout << "[INFO] Exiting LED Control App...\n";
-    return 0;
-}
+        std::cout << "[INFO] Exiting LED Control App...\n";
+        return 0;
+    }

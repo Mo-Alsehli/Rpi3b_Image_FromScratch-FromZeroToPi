@@ -34,8 +34,7 @@ GPIO27 (Pin 13) ──── LED ──── Resistor ──── GND (Pin 6)
 gpio-led-control/
 ├── main.cpp          # Main application loop
 ├── led.h             # Class definitions and GPIO interfaces
-├── led.cpp           # GPIO control implementation
-├── Makefile          # Build configuration
+├── led.cpp           # GPIO control 
 └── README.md         # This file
 ```
 
@@ -80,6 +79,10 @@ g++ -std=c++11 -o led_control main.cpp led.cpp
 # Cross-compile for Pi
 aarch64-linux-gnu-g++ -std=c++11 -o led_control main.cpp led.cpp
 ```
+
+## NOTE
+- Make sure to add this line `gpio=17=ip,pu` at `config.txt` to enable pull-down resistor for gpio17 in rpi.
+
 
 ## GPIO Setup
 
